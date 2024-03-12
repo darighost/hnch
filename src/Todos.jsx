@@ -24,8 +24,8 @@ const Todos = () => {
   return (
     <ul className="todo-list">
       {data.allTodos.map((todo) => (
-        <TodoItem todo={todo} key={todo.id} />
-      ))}
+        <div class='post-container'><span class='post-id'>{todo.id}.</span><TodoItem todo={todo} key={todo.id} /></div>
+      )).reverse()}
     </ul>
   )
 }

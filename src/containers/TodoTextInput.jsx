@@ -32,12 +32,15 @@ export default function TodoTextInput() {
         input.value = ''
       }}
     >
-      <input
+      <textarea
+        rows={6}
         className="new-todo"
         ref={(node) => {
           input = node
         }}
       />
+      <br />
+      <input id='gossip-btn' value="Gossip!" type='submit'></input>
     </form>
   )
 }

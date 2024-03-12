@@ -6,8 +6,63 @@
   color: red;
 }
 
-.todos-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input[type=submit] {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #f6f6ef;
+  color: #111111;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+}
+
+
+.post-id {
+  color: #828282;
+  padding-right: 15px;
+}
+
+.post-container {
+  margin-bottom: 30px;
+}
+
+.todoapp h1 {
+  width: 100%;
+  font-size: 80px;
+  font-weight: 200;
+  text-align: center;
+  background-color: #ff6600;
+  color: black;
+}
+
+textarea {
+  margin-top: 15px;
+}
+
+#gossip-btn {
+  width: 260px;
+}
+
+.new-todo {
+  width: 250px;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 8px;
+  list-style: none;
 }

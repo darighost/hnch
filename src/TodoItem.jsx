@@ -41,17 +41,16 @@ const TodoItem = (props) => {
     completed: props.todo.completed,
   })
   return (
-    <li className={names}>
-      <div className="view">
-        <input
+    <span className="view">
+      {/* <input
           type="checkbox"
           className="toggle"
           checked={props.todo.completed}
           onChange={() => completeTodo(props.todo.id)}
           data-cy="toggle"
-        />
-        <label>{`${props.todo.title}`}</label>
-        <button
+        /> */}
+      <label>{`${props.todo.title}`}</label>
+      {/* <button
           className="destroy"
           data-cy="destroy"
           onClick={() => {
@@ -61,9 +60,8 @@ const TodoItem = (props) => {
               },
             })
           }}
-        />
-      </div>
-    </li>
+        /> */}
+    </span>
   )
 }
 export default TodoItem
